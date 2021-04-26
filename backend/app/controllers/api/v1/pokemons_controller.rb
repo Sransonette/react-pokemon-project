@@ -14,7 +14,7 @@ class Api::V1::PokemonsController < ApplicationController
     end
 
     def create
-        binding.pry
+        
         pokemon = Pokemon.create(pokemons_params)
             if pokemon.save
                 render json: pokemon
@@ -31,7 +31,7 @@ class Api::V1::PokemonsController < ApplicationController
     private
 
     def pokemons_params
-        params.require(:pokemons).permit(:name, :pokemon_type)
+        params.require(:pokemon).permit(:name, :pokemon_type)
     end
 
 end
