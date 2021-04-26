@@ -1,3 +1,4 @@
+require "pry"
 class Api::V1::PokemonsController < ApplicationController
 
     def index
@@ -13,6 +14,7 @@ class Api::V1::PokemonsController < ApplicationController
     end
 
     def create
+        binding.pry
         pokemon = Pokemon.create(pokemons_params)
             if pokemon.save
                 render json: pokemon
