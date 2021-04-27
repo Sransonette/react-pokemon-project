@@ -14,13 +14,12 @@ class Api::V1::PokemonsController < ApplicationController
     end
 
     def create
-        
-        pokemon = Pokemon.create(pokemons_params)
-            if pokemon.save
-                render json: pokemon
-            else
-                render json: {error: 'Card was not added to collection'}
-            end
+            pokemon = Pokemon.create(pokemons_params)
+                if pokemon.save
+                    render json: pokemon
+                else
+                    render json: {error: 'Card was not added to collection'}
+                end
     end
 
     def delete
