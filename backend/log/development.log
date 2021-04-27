@@ -1071,3 +1071,211 @@ Processing by Api::V1::PokemonsController#create as JSON
 Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 5.5ms | Allocations: 2949)
 
 
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 21:26:30 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1880)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 21:40:30 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 1896)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 21:40:46 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 1878)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 21:40:48 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.3ms | Allocations: 1878)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 21:57:34 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms | Allocations: 1896)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 21:59:24 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.3ms | Allocations: 1879)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 22:00:33 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1878)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 22:01:30 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1878)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 22:06:50 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.3ms | Allocations: 1896)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 22:07:40 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1878)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 22:14:56 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms | Allocations: 1896)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 22:16:15 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 1878)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 22:16:32 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 1878)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 22:17:43 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1878)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 22:17:44 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 1878)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 22:17:48 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1878)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 22:25:34 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 1896)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 22:25:34 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1878)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 22:25:42 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms | Allocations: 1878)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 22:27:15 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 1878)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 22:27:32 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms | Allocations: 1878)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 22:27:32 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1878)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 22:27:37 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1878)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 22:27:38 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1878)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 22:28:49 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 1878)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 22:32:43 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1878)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 22:32:48 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1878)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 22:33:29 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1878)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-26 22:33:30 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1878)
+
+
