@@ -2735,3 +2735,726 @@ Processing by Api::V1::PokemonsController#index as */*
 Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1197)
 
 
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 00:25:13 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1215)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 00:25:14 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1197)
+
+
+Started DELETE "/api/v1/pokemons/20" for ::1 at 2021-04-28 00:25:15 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"20"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE (20) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:26:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[36mPokemon Destroy (0.9ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 18]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 7.5ms | Allocations: 3054)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 00:25:16 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1061)
+
+
+Started DELETE "/api/v1/pokemons/20" for ::1 at 2021-04-28 00:25:17 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"20"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE (20) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:26:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[36mPokemon Destroy (0.8ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 19]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 6.4ms | Allocations: 3440)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 00:25:19 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 925)
+
+
+Started DELETE "/api/v1/pokemons/20" for ::1 at 2021-04-28 00:25:19 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"20"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE (20) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:26:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[36mPokemon Destroy (0.8ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 20]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 7.0ms | Allocations: 3075)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 00:25:20 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 790)
+
+
+Started POST "/api/v1/pokemons" for ::1 at 2021-04-28 00:25:27 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"name"=>"Pikachu", "pokemon_type"=>"Electric", "pokemon"=>{"name"=>"Pikachu", "pokemon_type"=>"Electric"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[36mPokemon Create (0.8ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokemon_type", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pikachu"], ["pokemon_type", "Electric"], ["created_at", "2021-04-28 05:25:27.437924"], ["updated_at", "2021-04-28 05:25:27.437924"]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 7.2ms | Allocations: 2941)
+
+
+Started POST "/api/v1/pokemons" for ::1 at 2021-04-28 00:25:30 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"name"=>"Vulpix", "pokemon_type"=>"Fire", "pokemon"=>{"name"=>"Vulpix", "pokemon_type"=>"Fire"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[36mPokemon Create (0.9ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokemon_type", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Vulpix"], ["pokemon_type", "Fire"], ["created_at", "2021-04-28 05:25:30.164920"], ["updated_at", "2021-04-28 05:25:30.164920"]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 7.0ms | Allocations: 2896)
+
+
+Started POST "/api/v1/pokemons" for ::1 at 2021-04-28 00:25:32 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"name"=>"Charmander", "pokemon_type"=>"Fire", "pokemon"=>{"name"=>"Charmander", "pokemon_type"=>"Fire"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[36mPokemon Create (0.7ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokemon_type", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Charmander"], ["pokemon_type", "Fire"], ["created_at", "2021-04-28 05:25:32.877591"], ["updated_at", "2021-04-28 05:25:32.877591"]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 6.6ms | Allocations: 2973)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 00:26:49 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1199)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 00:26:56 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1197)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 00:50:21 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 1215)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 00:50:32 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1197)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 00:50:32 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1197)
+
+
+Started DELETE "/api/v1/pokemons/21" for ::1 at 2021-04-28 00:50:37 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"21"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE (21) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:26:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[36mPokemon Destroy (0.9ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 21]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 6.4ms | Allocations: 3081)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 00:50:39 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1061)
+
+
+Started DELETE "/api/v1/pokemons/23" for ::1 at 2021-04-28 00:50:40 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"23"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE (23) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:26:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[36mPokemon Destroy (0.8ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 22]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 7.3ms | Allocations: 3080)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 00:50:41 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 925)
+
+
+Started DELETE "/api/v1/pokemons/23" for ::1 at 2021-04-28 00:50:42 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"23"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE (23) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:26:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[36mPokemon Destroy (0.7ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 23]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 6.9ms | Allocations: 3064)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 00:50:43 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 789)
+
+
+Started POST "/api/v1/pokemons" for ::1 at 2021-04-28 00:50:46 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"name"=>"Pikachu", "pokemon_type"=>"Electric", "pokemon"=>{"name"=>"Pikachu", "pokemon_type"=>"Electric"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[36mPokemon Create (1.1ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokemon_type", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pikachu"], ["pokemon_type", "Electric"], ["created_at", "2021-04-28 05:50:46.822825"], ["updated_at", "2021-04-28 05:50:46.822825"]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 7.5ms | Allocations: 3306)
+
+
+Started POST "/api/v1/pokemons" for ::1 at 2021-04-28 00:50:49 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"name"=>"Vulpix", "pokemon_type"=>"Fire", "pokemon"=>{"name"=>"Vulpix", "pokemon_type"=>"Fire"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[36mPokemon Create (1.1ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokemon_type", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Vulpix"], ["pokemon_type", "Fire"], ["created_at", "2021-04-28 05:50:49.481033"], ["updated_at", "2021-04-28 05:50:49.481033"]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 7.5ms | Allocations: 2936)
+
+
+Started POST "/api/v1/pokemons" for ::1 at 2021-04-28 00:50:52 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"name"=>"Charmander", "pokemon_type"=>"Fire", "pokemon"=>{"name"=>"Charmander", "pokemon_type"=>"Fire"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[36mPokemon Create (0.7ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokemon_type", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Charmander"], ["pokemon_type", "Fire"], ["created_at", "2021-04-28 05:50:52.294409"], ["updated_at", "2021-04-28 05:50:52.294409"]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 7.3ms | Allocations: 3272)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 00:51:43 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1199)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 00:53:42 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1197)
+
+
+Started DELETE "/api/v1/pokemons/24" for ::1 at 2021-04-28 00:53:46 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"24"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE (24) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:26:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[36mPokemon Destroy (0.9ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 24]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[35m (70.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+Completed 200 OK in 82ms (Views: 0.2ms | ActiveRecord: 71.9ms | Allocations: 3078)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 00:53:54 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1061)
+
+
+Started DELETE "/api/v1/pokemons/26" for ::1 at 2021-04-28 00:53:55 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"26"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE (26) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:26:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[36mPokemon Destroy (0.9ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 25]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 7.3ms | Allocations: 3075)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 00:53:56 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 925)
+
+
+Started POST "/api/v1/pokemons" for ::1 at 2021-04-28 00:54:00 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"name"=>"Pikachu", "pokemon_type"=>"Electric", "pokemon"=>{"name"=>"Pikachu", "pokemon_type"=>"Electric"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[36mPokemon Create (1.0ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokemon_type", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pikachu"], ["pokemon_type", "Electric"], ["created_at", "2021-04-28 05:54:00.129687"], ["updated_at", "2021-04-28 05:54:00.129687"]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 7.5ms | Allocations: 2941)
+
+
+Started POST "/api/v1/pokemons" for ::1 at 2021-04-28 00:54:05 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"name"=>"Bulbasaur", "pokemon_type"=>"Grass", "pokemon"=>{"name"=>"Bulbasaur", "pokemon_type"=>"Grass"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[36mPokemon Create (0.9ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokemon_type", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bulbasaur"], ["pokemon_type", "Grass"], ["created_at", "2021-04-28 05:54:05.711378"], ["updated_at", "2021-04-28 05:54:05.711378"]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 8.4ms | Allocations: 2933)
+
+
+Started POST "/api/v1/pokemons" for ::1 at 2021-04-28 00:54:09 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"name"=>"Raichu", "pokemon_type"=>"Electric", "pokemon"=>{"name"=>"Raichu", "pokemon_type"=>"Electric"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[36mPokemon Create (0.7ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokemon_type", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Raichu"], ["pokemon_type", "Electric"], ["created_at", "2021-04-28 05:54:09.569207"], ["updated_at", "2021-04-28 05:54:09.569207"]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 7.5ms | Allocations: 2947)
+
+
+Started DELETE "/api/v1/pokemons/28" for ::1 at 2021-04-28 00:54:23 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"28"}
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE (28) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:28:in `destroy'
+  [1m[36mPokemon Destroy (0.9ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 26]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:28:in `destroy'
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:28:in `destroy'
+Completed 200 OK in 28883ms (Views: 0.4ms | ActiveRecord: 7.8ms | Allocations: 19667)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 00:54:56 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.9ms | Allocations: 5100)
+
+
+Started DELETE "/api/v1/pokemons/27" for ::1 at 2021-04-28 00:54:57 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"27"}
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 00:54:58 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 1214)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 00:55:01 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1196)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 00:55:06 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1196)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 00:55:15 -0500
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 00:56:11 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.9ms | Allocations: 5352)
+
+
+Started DELETE "/api/v1/pokemons/28" for ::1 at 2021-04-28 00:56:12 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"28"}
+Started DELETE "/api/v1/pokemons/28" for 127.0.0.1 at 2021-04-28 00:57:07 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"28"}
+Started DELETE "/api/v1/pokemons/27" for ::1 at 2021-04-28 00:57:20 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"27"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE (27) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:28:in `destroy'
+  [1m[36mPokemon Destroy (1.1ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 27]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:28:in `destroy'
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:28:in `destroy'
+Completed 200 OK in 274782ms (Views: 0.6ms | ActiveRecord: 7.9ms | Allocations: 21850)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 01:01:59 -0500
+Completed 500 Internal Server Error in 295288ms (ActiveRecord: 0.0ms | Allocations: 32505)
+
+
+  
+Errno::EIO (Input/output error @ io_writev - <STDOUT>):
+  
+app/controllers/api/v1/pokemons_controller.rb:26:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 1.0ms | Allocations: 4991)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 01:02:30 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.8ms | Allocations: 5216)
+
+
+Started DELETE "/api/v1/pokemons/28" for ::1 at 2021-04-28 01:02:35 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"28"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE (28) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:26:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[36mPokemon Destroy (1.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 28]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 8.3ms | Allocations: 3436)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 01:03:46 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 942)
+
+
+Started DELETE "/api/v1/pokemons/29" for ::1 at 2021-04-28 01:03:47 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"29"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE (29) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:26:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[36mPokemon Destroy (0.9ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 29]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 6.4ms | Allocations: 3075)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 01:05:36 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 806)
+
+
+Started POST "/api/v1/pokemons" for ::1 at 2021-04-28 01:05:40 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"name"=>"Pikachu", "pokemon_type"=>"Electric", "pokemon"=>{"name"=>"Pikachu", "pokemon_type"=>"Electric"}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 122)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: pokemons):
+  
+app/controllers/api/v1/pokemons_controller.rb:34:in `pokemons_params'
+app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Started POST "/api/v1/pokemons" for ::1 at 2021-04-28 01:05:42 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"name"=>"Vulpix", "pokemon_type"=>"Fire", "pokemon"=>{"name"=>"Vulpix", "pokemon_type"=>"Fire"}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 114)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: pokemons):
+  
+app/controllers/api/v1/pokemons_controller.rb:34:in `pokemons_params'
+app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Started POST "/api/v1/pokemons" for ::1 at 2021-04-28 01:05:48 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"name"=>"Charmander", "pokemon_type"=>"Fire", "pokemon"=>{"name"=>"Charmander", "pokemon_type"=>"Fire"}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 114)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: pokemons):
+  
+app/controllers/api/v1/pokemons_controller.rb:34:in `pokemons_params'
+app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Started DELETE "/api/v1/pokemons/undefined" for ::1 at 2021-04-28 01:05:50 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE (undefined) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:26:in `destroy'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 777)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: undefined):
+  
+app/controllers/api/v1/pokemons_controller.rb:26:in `destroy'
+Started DELETE "/api/v1/pokemons/undefined" for ::1 at 2021-04-28 01:05:53 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE (undefined) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:26:in `destroy'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms | Allocations: 777)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: undefined):
+  
+app/controllers/api/v1/pokemons_controller.rb:26:in `destroy'
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 01:06:11 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 788)
+
+
+Started POST "/api/v1/pokemons" for ::1 at 2021-04-28 01:06:16 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"name"=>"Pikachu", "pokemon_type"=>"Electric", "pokemon"=>{"name"=>"Pikachu", "pokemon_type"=>"Electric"}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 114)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: pokemons):
+  
+app/controllers/api/v1/pokemons_controller.rb:34:in `pokemons_params'
+app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 01:06:48 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.7ms | Allocations: 1631)
+
+
+Started POST "/api/v1/pokemons" for ::1 at 2021-04-28 01:06:50 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"name"=>"Pikachu", "pokemon_type"=>"Electric", "pokemon"=>{"name"=>"Pikachu", "pokemon_type"=>"Electric"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[36mPokemon Create (1.0ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokemon_type", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pikachu"], ["pokemon_type", "Electric"], ["created_at", "2021-04-28 06:06:50.319535"], ["updated_at", "2021-04-28 06:06:50.319535"]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 8.0ms | Allocations: 6387)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 01:07:35 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 958)
+
+
+Started POST "/api/v1/pokemons" for ::1 at 2021-04-28 01:07:39 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"name"=>"Vulpix", "pokemon_type"=>"Fire", "pokemon"=>{"name"=>"Vulpix", "pokemon_type"=>"Fire"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[36mPokemon Create (1.1ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokemon_type", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Vulpix"], ["pokemon_type", "Fire"], ["created_at", "2021-04-28 06:07:39.248582"], ["updated_at", "2021-04-28 06:07:39.248582"]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[35m (168.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Completed 200 OK in 178ms (Views: 0.6ms | ActiveRecord: 169.5ms | Allocations: 2960)
+
+
+Started POST "/api/v1/pokemons" for ::1 at 2021-04-28 01:07:41 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"name"=>"Charmander", "pokemon_type"=>"Fire", "pokemon"=>{"name"=>"Charmander", "pokemon_type"=>"Fire"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[36mPokemon Create (0.9ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokemon_type", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Charmander"], ["pokemon_type", "Fire"], ["created_at", "2021-04-28 06:07:41.897069"], ["updated_at", "2021-04-28 06:07:41.897069"]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[35m (65.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Completed 200 OK in 72ms (Views: 0.2ms | ActiveRecord: 66.4ms | Allocations: 2954)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 01:07:44 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1199)
+
+
+Started DELETE "/api/v1/pokemons/32" for ::1 at 2021-04-28 01:07:45 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"32"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE (32) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:26:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[36mPokemon Destroy (1.1ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 30]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[35m (56.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+Completed 200 OK in 80ms (Views: 0.3ms | ActiveRecord: 58.1ms | Allocations: 5110)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 01:07:47 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1061)
+
+
+Started DELETE "/api/v1/pokemons/32" for ::1 at 2021-04-28 01:07:48 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"32"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE (32) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:26:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[36mPokemon Destroy (0.9ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 31]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[35m (204.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+Completed 200 OK in 211ms (Views: 0.4ms | ActiveRecord: 205.2ms | Allocations: 3925)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 01:07:48 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 925)
+
+
+Started DELETE "/api/v1/pokemons/32" for ::1 at 2021-04-28 01:07:49 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"32"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE (32) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:26:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[36mPokemon Destroy (0.8ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 32]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[35m (406.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-28 01:07:50 -0500
+Completed 200 OK in 413ms (Views: 0.3ms | ActiveRecord: 407.4ms | Allocations: 3427)
+
+
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 789)
+
+
+Started POST "/api/v1/pokemons" for ::1 at 2021-04-28 01:07:52 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"name"=>"Vulpix", "pokemon_type"=>"Fire", "pokemon"=>{"name"=>"Vulpix", "pokemon_type"=>"Fire"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[36mPokemon Create (1.0ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokemon_type", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Vulpix"], ["pokemon_type", "Fire"], ["created_at", "2021-04-28 06:07:52.999991"], ["updated_at", "2021-04-28 06:07:52.999991"]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[35m (394.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Completed 200 OK in 403ms (Views: 0.2ms | ActiveRecord: 395.3ms | Allocations: 3344)
+
+
+Started POST "/api/v1/pokemons" for ::1 at 2021-04-28 01:07:55 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"name"=>"Pikachu", "pokemon_type"=>"Electric", "pokemon"=>{"name"=>"Pikachu", "pokemon_type"=>"Electric"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[36mPokemon Create (0.8ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokemon_type", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pikachu"], ["pokemon_type", "Electric"], ["created_at", "2021-04-28 06:07:55.303443"], ["updated_at", "2021-04-28 06:07:55.303443"]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[35m (232.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Completed 200 OK in 238ms (Views: 0.2ms | ActiveRecord: 232.8ms | Allocations: 3299)
+
+
+Started POST "/api/v1/pokemons" for ::1 at 2021-04-28 01:07:58 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"name"=>"Raichu", "pokemon_type"=>"Electric", "pokemon"=>{"name"=>"Raichu", "pokemon_type"=>"Electric"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[36mPokemon Create (1.1ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokemon_type", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Raichu"], ["pokemon_type", "Electric"], ["created_at", "2021-04-28 06:07:58.186694"], ["updated_at", "2021-04-28 06:07:58.186694"]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+  [1m[35m (197.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Completed 200 OK in 204ms (Views: 0.3ms | ActiveRecord: 198.2ms | Allocations: 3309)
+
+
