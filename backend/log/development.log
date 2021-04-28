@@ -1926,3 +1926,494 @@ Processing by Api::V1::PokemonsController#index as */*
 Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 1742)
 
 
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-27 01:22:47 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 1742)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-27 21:17:29 -0500
+  [1m[35m (13.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 28ms (Views: 5.8ms | ActiveRecord: 0.7ms | Allocations: 5897)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-27 21:17:35 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.8ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.8ms | Allocations: 1759)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-27 21:17:41 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1759)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-27 21:18:02 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 1759)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-27 21:18:35 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1759)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-27 21:57:34 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms | Allocations: 1760)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-27 22:00:07 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.5ms | Allocations: 1745)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-27 22:00:33 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1742)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-27 22:24:02 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 1760)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-27 22:24:55 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms | Allocations: 1742)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-27 22:25:02 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1742)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-27 22:33:05 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 1760)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-27 22:34:01 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.4ms | Allocations: 1742)
+
+
+Started DELETE "/api/v1/pokemons/undefined" for ::1 at 2021-04-27 22:37:44 -0500
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for Api::V1::PokemonsController):
+  
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-27 22:38:28 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 1741)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-27 22:38:29 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.4ms | Allocations: 1742)
+
+
+Started DELETE "/api/v1/pokemons/9" for ::1 at 2021-04-27 22:38:33 -0500
+Started DELETE "/api/v1/pokemons/9" for ::1 at 2021-04-27 22:38:33 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for Api::V1::PokemonsController):
+  
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for Api::V1::PokemonsController):
+  
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-27 22:38:34 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.8ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.8ms | Allocations: 1760)
+
+
+Started DELETE "/api/v1/pokemons/9" for ::1 at 2021-04-27 22:39:17 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for Api::V1::PokemonsController):
+  
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/api/v1/pokemons/10" for ::1 at 2021-04-27 22:39:27 -0500
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for Api::V1::PokemonsController):
+  
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/api/v1/pokemons/11" for ::1 at 2021-04-27 22:39:27 -0500
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for Api::V1::PokemonsController):
+  
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/api/v1/pokemons/12" for ::1 at 2021-04-27 22:39:27 -0500
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for Api::V1::PokemonsController):
+  
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-27 22:40:55 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 1.2ms | Allocations: 5661)
+
+
+Started DELETE "/api/v1/pokemons/9" for ::1 at 2021-04-27 22:40:56 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE (9) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ (pry):3:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ (pry):4:in `destroy'
+  [1m[36mPokemon Destroy (1.1ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 9]]
+  ↳ (pry):4:in `destroy'
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ (pry):4:in `destroy'
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-27 22:46:10 -0500
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-27 22:47:25 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 1.2ms | Allocations: 5761)
+
+
+Started DELETE "/api/v1/pokemons/10" for ::1 at 2021-04-27 22:47:26 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE (10) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:28:in `destroy'
+  [1m[36mPokemon Destroy (1.1ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 10]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:28:in `destroy'
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:28:in `destroy'
+Completed 204 No Content in 13ms (ActiveRecord: 6.7ms | Allocations: 3307)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-04-27 22:47:30 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 1490)
+
+

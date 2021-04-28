@@ -22,7 +22,8 @@ class Api::V1::PokemonsController < ApplicationController
                 end
     end
 
-    def delete
+    def destroy
+        
         pokemon = Pokemon.find_by(params[:id])
         pokemon.destroy
     end
