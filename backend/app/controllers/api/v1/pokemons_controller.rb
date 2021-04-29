@@ -23,9 +23,10 @@ class Api::V1::PokemonsController < ApplicationController
     end
 
     def destroy
-        pokemon = Pokemon.find_by(params[:id])
+        pokemon = Pokemon.find_by(id: params[:id])
         pokemon.destroy
-        render json: pokemon
+        all_pokemon = Pokemon.all
+        render json: all_pokemon
     end
 
     private
