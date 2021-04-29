@@ -22,7 +22,6 @@ class PokemonContainer extends Component {
             <div>
                 <Switch>
                     PokemonContainer
-                    REEEEEEEEEEEE
                     <Route exact path='/' component={Pokedex}/>
                     <Route exact path='/pokemon/new' component={PokemonInput}/>
                     <Route exact path='/pokemon/user_pokemon' render={(routerProps) => <PokemonList {...routerProps} pokemon={this.props.pokemon}/>}/>

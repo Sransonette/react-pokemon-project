@@ -8,16 +8,7 @@ export default function manageStore(state = {pokemon: []}, action) {
     case 'FETCH_POKEDEX':
       return {pokemon: action.payload}
     case 'DELETE_POKEMON':
-      let pokemon = state.pokemon.map(pokemon => {
-         if (pokemon.id === action.payload.id) {
-           debugger
-           return action.payload
-        } else {
-           return pokemon
-        }
-      })
-      return {...state, pokemon: pokemon}
-
+        return {pokemon: action.payload}
     default:
       return state
   }
