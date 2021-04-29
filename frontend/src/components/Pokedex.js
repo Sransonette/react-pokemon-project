@@ -1,14 +1,11 @@
 import React from 'react'
 
 const Pokedex = (props) => {
-    
-    return(
-        <div >
+
+    return( 
+        <div>
             {props.pokemon.map(pokemon => 
-                <li key={pokemon.id}>
-                {pokemon.name}
-                </li>
-                )}
+            <li key={pokemon.id}>{pokemon.name}</li>)}
         </div>
     )
 

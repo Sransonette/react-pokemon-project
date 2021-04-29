@@ -5,8 +5,10 @@ const NavBar = (props) => {
 
     return ( 
         <div>
+            <NavLink to='/' style={{paddingRight: '10px'}}>Home </NavLink>
             <NavLink to='/pokemon/new' style={{paddingRight: '10px'}}>Add New Pokemon </NavLink>
             <NavLink to='/pokemon/user_pokemon' style={{paddingRight: '10px'}}>Current Team </NavLink>
+            
         </div>
     )
 

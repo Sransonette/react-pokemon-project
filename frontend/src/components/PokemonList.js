@@ -13,7 +13,7 @@ const PokemonList = (props) => {
     return( 
         <div>
             {props.pokemon.map(pokemon => 
-            <div key={pokemon.id}>
+            <div>
                 <li key={pokemon.id}><Link to={`/pokemon/${pokemon.id}`}>{pokemon.name} </Link>
                 <button onClick={() => handleDelete(pokemon.id)}>Delete</button>
                 </li>
