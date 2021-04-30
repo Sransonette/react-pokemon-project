@@ -9,17 +9,24 @@ const PokemonList = (props) => {
         props.deletePokemon(id)
 
     }
+
+    const pokemonData = props.pokemon
     
-    return( 
-        <div>
-            {props.pokemon.map(pokemon => 
+        return( 
             <div>
-                <li key={pokemon.id}><Link to={`/pokemon/${pokemon.id}`}>{pokemon.name} </Link>
-                <button onClick={() => handleDelete(pokemon.id)}>Delete</button>
-                </li>
-            </div>)}
-        </div>
-    )
+            {pokemonData.length ? (
+                props.pokemon.map(pokemon => 
+                    <li key={pokemon.id}><Link to={`/pokemon/${pokemon.id}`}>{pokemon.name} </Link>
+                    <button onClick={() => handleDelete(pokemon.id)}>Delete</button>
+                    </li>)
+                )
+                    : <li>No Pokemon captured</li>
+
+            }
+            </div>
+
+        )
+        
 
 }
 
