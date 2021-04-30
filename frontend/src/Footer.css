@@ -4,10 +4,11 @@
     display: flex;
     justify-content: center;
     align-items: baseline;
-    padding: 1em;
+    padding: 45px;
     margin-bottom: 2em;
     background-color: rgb(26, 186, 192);
     color: #fff;
-    bottom: 0px;
+    bottom: -100px;
     position: fixed;
+    
   }
