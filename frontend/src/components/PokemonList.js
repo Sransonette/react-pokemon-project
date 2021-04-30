@@ -13,12 +13,14 @@ const PokemonList = (props) => {
     const pokemonData = props.pokemon
     
         return( 
-            <div>
+            <div class={"trainerPokemon"}>
             {pokemonData.length ? (
                 props.pokemon.map(pokemon => 
+                    <div class={"trainerPokemonNames"}>
                     <li key={pokemon.id}><Link to={`/pokemon/${pokemon.id}`}>{pokemon.name} </Link>
                     <button onClick={() => handleDelete(pokemon.id)}>Delete</button>
-                    </li>)
+                    </li>
+                    </div>)
                 )
                     : <li>No Pokemon captured</li>
 

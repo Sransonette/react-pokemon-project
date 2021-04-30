@@ -4,9 +4,11 @@ const Pokedex = (props) => {
 
 
     return( 
-        <div>
-            {props.pokemon.results && props.pokemon.results.map(pokemon => 
-            <li key={pokemon.id}>{pokemon.name}</li>)}
+        <div className={"allPokemon"}>
+            {props.pokemon.results && props.pokemon.results.map(pokemon =>
+            <div className={"allPokemonNames"}>
+            <li key={pokemon.id}>{pokemon.name}</li>
+            </div>)}
         </div>
     )
 

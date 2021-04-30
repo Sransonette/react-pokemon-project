@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+.allPokemon {
+  width: 45%;
+  margin: auto;
+}
+
+.allPokemonNames {
+  margin: 10px 0;
+  width: 100%;
+  justify-content: space-between;
+  border: 2px solid purple;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.trainerPokemon {
+  width: 45%;
+  margin: auto;
+}
+
+.trainerPokemonNames {
+  margin: 10px 0;
+  width: 100%;
+  justify-content: space-between;
+  border: 2px solid purple;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+

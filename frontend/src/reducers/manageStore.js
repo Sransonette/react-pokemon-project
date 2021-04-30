@@ -1,14 +1,14 @@
-export default function manageStore(state = {pokemon: []}, action) {
+export default function manageStore(state = {pokemon: [], allPokemon: []}, action) {
 
   switch(action.type) {
     case 'FETCH_POKEMON':
-      return {pokemon: action.payload}
+      return {...state, pokemon: action.payload}
     case 'POST_POKEMON':
       return {...state, pokemon: [...state.pokemon, action.payload]}
     case 'FETCH_POKEDEX':
-      return {pokemon: action.payload}
+      return {...state, allPokemon: action.payload}
     case 'DELETE_POKEMON':
-        return {pokemon: action.payload}
+        return {...state, pokemon: action.payload}
     default:
       return state
   }

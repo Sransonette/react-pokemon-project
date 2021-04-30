@@ -22,7 +22,8 @@ class PokemonContainer extends Component {
             <div>
                 <Switch>
                     PokemonContainer
-                    <Route exact path='/' render={(routerProps) => <Pokedex {...routerProps} pokemon={this.props.pokemon}/>}/>
+                    
+                    <Route exact path='/' render={(routerProps) => <Pokedex {...routerProps} pokemon={this.props.allPokemon}/>}/>
                     <Route exact path='/pokemon/new' component={PokemonInput}/>
                     <Route exact path='/pokemon/user_pokemon' render={(routerProps) => <PokemonList {...routerProps} pokemon={this.props.pokemon}/>}/>
                     <Route exact path='/pokemon/:id' render={(routerProps) => <Pokemon {...routerProps} pokemon={this.props.pokemon}/>}/>
@@ -37,7 +38,8 @@ class PokemonContainer extends Component {
 //gives props information from store to this container
 const mapStateToProps = state => {
     return {
-        pokemon: state.pokemon
+        pokemon: state.pokemon,
+        allPokemon: state.allPokemon
     }
 }
 
