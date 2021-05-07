@@ -27,7 +27,7 @@ class PokemonContainer extends Component {
                     <Route exact path='/pokemon/new' component={PokemonInput}/>
                     <Route exact path='/pokemon/user_pokemon' render={(routerProps) => <PokemonList {...routerProps} pokemon={this.props.pokemon}/>}/>
                     <Route exact path='/pokemon/:id' render={(routerProps) => <Pokemon {...routerProps} pokemon={this.props.pokemon}/>}/>
-                    <Redirect to={"/pokemon/new"}/>
+                    <Redirect to={"/"}/>
                 </Switch>
             </div>
         )
