@@ -7,7 +7,6 @@ const Pokemon = (props) => {
     
     return (
         <li> 
-        {/* {pokemon ? null : <Redirect to='/pokemon/user_pokemon'/>} */}
         {pokemon ? pokemon.name : null } - {pokemon ? pokemon.pokemon_type : null}
         </li>
 
