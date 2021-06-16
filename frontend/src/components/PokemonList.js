@@ -2,6 +2,9 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 import {deletePokemon} from '../actions/deletePokemon'
+import Like from '../components/Like'
+
+
 
 
 const PokemonList = (props) => {
@@ -20,7 +23,7 @@ const PokemonList = (props) => {
                     <div className={"trainerPokemonNames"}>
                     <li key={pokemon.id}><Link to={`/pokemon/${pokemon.id}`}>{pokemon.name} </Link>
                     <button onClick={() => handleDelete(pokemon.id)}>Delete</button>
-                    
+                    <Like/>
                     </li>
                     </div>)
                 )
