@@ -7,7 +7,7 @@ import { Redirect, Route, Switch } from 'react-router-dom'
 import { fetchPokemon } from '../actions/fetchPokemon'
 import { fetchPokedex } from '../actions/fetchPokedex'
 import { connect } from 'react-redux'
-import searchBar from '../components/searchBar.js';
+
 
 
 class PokemonContainer extends Component {

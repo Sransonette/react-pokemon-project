@@ -5,21 +5,24 @@ import { connect } from 'react-redux'
 import NavBar from './components/NavBar.js'
 import Header from './components/Header.js'
 import Footer from './components/Footer.js'
+import SearchBar from './components/SearchBar.js';
 
 class App extends Component {
 
   render() {
     return (
       <div className="App">
-      <Header/>
-      <NavBar/>
-        <PokemonContainer/>
-      <Footer/>
+        <Header />
+        <NavBar />
+        <SearchBar />
+        <PokemonContainer />
+        <Footer />
       </div>
-  )};
+    )
+  };
 
-  
-  
+
+
 }
 
 export default connect()(App);
