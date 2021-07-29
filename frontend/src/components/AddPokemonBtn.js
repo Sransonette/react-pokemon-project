@@ -1,14 +1,12 @@
 import React from 'react';
 
-const addPokemonBtn = () => {
+const AddPokemonBtn = () => {
 
      // handleSubmit = (event) => {
     //     event.preventDefault()
     //     this.props.postPokemon(this.state)
     //     this.setState({name: '', pokemon_type: ''})
     // }
-
-
 
     return (
         <div>
@@ -17,4 +15,4 @@ const addPokemonBtn = () => {
     );
 }
 
-export default addPokemonBtn;
+export default AddPokemonBtn;

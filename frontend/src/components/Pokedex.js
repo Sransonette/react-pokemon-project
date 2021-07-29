@@ -1,5 +1,5 @@
 import React from 'react'
-import addPokemonBtn from '../addPokemonBtn'
+import AddPokemonBtn from './AddPokemonBtn'
 
 const Pokedex = (props) => {
 
@@ -11,7 +11,7 @@ const Pokedex = (props) => {
             {props.pokemon.results && props.pokemon.results.map(pokemon =>
             <div className={"allPokemonNames"}>
             <li key={pokemon.id}>{pokemon.name}</li>
-            <addPokemonBtn/>
+            <AddPokemonBtn/>
             </div>)}
         </div>
     )
