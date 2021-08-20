@@ -1,18 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const AddPokemonBtn = () => {
+class AddPokemonBtn extends Component {
+    render() {
+        return (
 
-     // handleSubmit = (event) => {
-    //     event.preventDefault()
-    //     this.props.postPokemon(this.state)
-    //     this.setState({name: '', pokemon_type: ''})
-    // }
+            <div>
+                <button>Test</button>
+            </div>
+        );
 
-    return (
-        <div>
-            <button>Test</button>
-        </div>
-    );
+
+    }
 }
 
 export default AddPokemonBtn;
+
