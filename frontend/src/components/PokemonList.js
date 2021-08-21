@@ -1,8 +1,8 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-import {connect} from 'react-redux'
-import {deletePokemon} from '../actions/deletePokemon'
-import Like from '../components/Like'
+import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { deletePokemon } from '../actions/deletePokemon'
+
 
 
 
@@ -15,26 +15,26 @@ const PokemonList = (props) => {
     }
 
     const pokemonData = props.pokemon
-    
-        return( 
-            <div className={"trainerPokemon"}>
+
+    return (
+        <div className={"trainerPokemon"}>
             {pokemonData.length ? (
-                props.pokemon.map(pokemon => 
+                props.pokemon.map(pokemon =>
                     <div className={"trainerPokemonNames"}>
-                    <li key={pokemon.id}><Link to={`/pokemon/${pokemon.id}`}>{pokemon.name} </Link>
-                    <button onClick={() => handleDelete(pokemon.id)}>Delete</button>
-                    <Like/>
-                    </li>
+                        <li key={pokemon.id}><Link to={`/pokemon/${pokemon.id}`}>{pokemon.name} </Link>
+                            <button onClick={() => handleDelete(pokemon.id)}>Delete</button>
+
+                        </li>
                     </div>)
-                )
-                    : <li>No Pokemon captured</li>
+            )
+                : <li>No Pokemon captured</li>
 
             }
-            </div>
+        </div>
 
-        )
-        
+    )
+
 
 }
 
-export default connect(null, {deletePokemon})(PokemonList)
+export default connect(null, { deletePokemon })(PokemonList)

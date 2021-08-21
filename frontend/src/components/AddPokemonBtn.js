@@ -6,8 +6,8 @@ class AddPokemonBtn extends Component {
     render() {
 
         let HandleClick = () => {
-            // this.props.postPokemon(this.state)
-            alert("button works")
+            this.props.postPokemon(this.state)
+
         }
 
         return (
