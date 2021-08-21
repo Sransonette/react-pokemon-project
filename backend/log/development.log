@@ -9004,3 +9004,204 @@ Processing by Api::V1::PokemonsController#index as */*
 Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 788)
 
 
+Started POST "/api/v1/pokemons" for ::1 at 2021-08-20 19:14:14 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"_json"=>nil, "pokemon"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 119)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: pokemon):
+  
+app/controllers/api/v1/pokemons_controller.rb:35:in `pokemons_params'
+app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Started DELETE "/api/v1/pokemons/undefined" for ::1 at 2021-08-20 19:14:17 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:26:in `destroy'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 1003)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+Started POST "/api/v1/pokemons" for ::1 at 2021-08-20 19:14:19 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"_json"=>nil, "pokemon"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 119)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: pokemon):
+  
+app/controllers/api/v1/pokemons_controller.rb:35:in `pokemons_params'
+app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Started GET "/api/v1/pokemons" for ::1 at 2021-08-20 19:14:32 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 788)
+
+
+Started POST "/api/v1/pokemons" for ::1 at 2021-08-20 19:14:35 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"_json"=>nil, "pokemon"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 119)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: pokemon):
+  
+app/controllers/api/v1/pokemons_controller.rb:35:in `pokemons_params'
+app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Started DELETE "/api/v1/pokemons/undefined" for ::1 at 2021-08-20 19:14:37 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:26:in `destroy'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 1003)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+Started POST "/api/v1/pokemons" for ::1 at 2021-08-20 19:14:40 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"_json"=>nil, "pokemon"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 119)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: pokemon):
+  
+app/controllers/api/v1/pokemons_controller.rb:35:in `pokemons_params'
+app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Started GET "/api/v1/pokemons" for ::1 at 2021-08-20 19:14:43 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 788)
+
+
+Started POST "/api/v1/pokemons" for ::1 at 2021-08-20 19:15:38 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"_json"=>nil, "pokemon"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 119)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: pokemon):
+  
+app/controllers/api/v1/pokemons_controller.rb:35:in `pokemons_params'
+app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Started DELETE "/api/v1/pokemons/undefined" for ::1 at 2021-08-20 19:15:39 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:26:in `destroy'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 1003)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+Started POST "/api/v1/pokemons" for ::1 at 2021-08-20 19:16:46 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"_json"=>nil, "pokemon"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 119)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: pokemon):
+  
+app/controllers/api/v1/pokemons_controller.rb:35:in `pokemons_params'
+app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Started GET "/api/v1/pokemons" for ::1 at 2021-08-20 19:17:38 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 788)
+
+
+Started POST "/api/v1/pokemons" for ::1 at 2021-08-20 19:17:42 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"_json"=>nil, "pokemon"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 119)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: pokemon):
+  
+app/controllers/api/v1/pokemons_controller.rb:35:in `pokemons_params'
+app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Started DELETE "/api/v1/pokemons/undefined" for ::1 at 2021-08-20 19:17:47 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:26:in `destroy'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms | Allocations: 1001)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+Started POST "/api/v1/pokemons" for ::1 at 2021-08-20 19:17:58 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"_json"=>nil, "pokemon"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 119)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: pokemon):
+  
+app/controllers/api/v1/pokemons_controller.rb:35:in `pokemons_params'
+app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Started GET "/api/v1/pokemons" for ::1 at 2021-08-20 19:18:03 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 788)
+
+
+Started POST "/api/v1/pokemons" for ::1 at 2021-08-20 19:18:06 -0500
+Processing by Api::V1::PokemonsController#create as JSON
+  Parameters: {"_json"=>nil, "pokemon"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 119)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: pokemon):
+  
+app/controllers/api/v1/pokemons_controller.rb:35:in `pokemons_params'
+app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Started DELETE "/api/v1/pokemons/undefined" for ::1 at 2021-08-20 19:18:12 -0500
+Processing by Api::V1::PokemonsController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:26:in `destroy'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms | Allocations: 1002)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/api/v1/pokemons_controller.rb:27:in `destroy'
+Started GET "/api/v1/pokemons" for ::1 at 2021-08-20 19:19:08 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 788)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2021-08-20 19:19:31 -0500
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 789)
+
+

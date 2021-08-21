@@ -21,5 +21,11 @@ class AddPokemonBtn extends Component {
     }
 }
 
-export default connect(null, { postPokemon })(AddPokemonBtn)
+const mapStateToProps = state => {
+    return {
+        pokemon: state.pokemon,
+    }
+}
+
+export default connect(mapStateToProps, { postPokemon })(AddPokemonBtn)
 
