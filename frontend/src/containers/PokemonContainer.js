@@ -7,6 +7,7 @@ import { Redirect, Route, Switch } from 'react-router-dom'
 import { fetchPokemon } from '../actions/fetchPokemon'
 import { fetchPokedex } from '../actions/fetchPokedex'
 import { connect } from 'react-redux'
+import AddPokemonBtn from '../components/AddPokemonBtn.js';
 
 
 
@@ -23,7 +24,8 @@ class PokemonContainer extends Component {
             <div>
                 <Switch>
                     <Route exact path='/' render={(routerProps) => <Pokedex {...routerProps} pokemon={this.props.allPokemon} />} />
-                    <Route exact path='/pokemon/new' component={PokemonInput} />
+                    {/* <Route exact path='/pokemon/new' component={PokemonInput} /> */}
+                    <Route exact path='/pokemon/new' component={AddPokemonBtn} />
                     <Route exact path='/pokemon/user_pokemon' render={(routerProps) => <PokemonList {...routerProps} pokemon={this.props.pokemon} />} />
                     <Route exact path='/pokemon/:id' render={(routerProps) => <Pokemon {...routerProps} pokemon={this.props.pokemon} />} />
                     <Redirect to={"/"} />
