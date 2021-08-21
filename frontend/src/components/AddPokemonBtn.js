@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-
+import { connect } from 'react-redux'
+import { postPokemon } from '../actions/postPokemon'
 
 class AddPokemonBtn extends Component {
     render() {
 
-        onClick = (event) => {
-            event.preventDefault()
-            this.props.postPokemon(this.state)
+        let HandleClick = () => {
+            // this.props.postPokemon(this.state)
+            alert("button works")
         }
 
         return (
@@ -20,5 +21,5 @@ class AddPokemonBtn extends Component {
     }
 }
 
-export default AddPokemonBtn;
+export default connect(null, { postPokemon })(AddPokemonBtn)
 
