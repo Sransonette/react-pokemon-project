@@ -6,14 +6,14 @@ import NavBar from './components/NavBar.js'
 import Header from './components/Header.js'
 import Footer from './components/Footer.js'
 import SearchBar from './components/SearchBar.js';
-
+import Background from './components/Background';
 
 class App extends Component {
 
   render() {
     return (
       <div className="App">
-
+        <Background />
         <Header />
         <NavBar />
         <SearchBar />
