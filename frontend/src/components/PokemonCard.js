@@ -23,34 +23,16 @@ const useStyles = makeStyles({
     }
 });
 
-export default function BusinessCard(props) {
+export default function PokemonCard(props) {
     const classes = useStyles();
 
     return (
         <Card className={classes.root} varient="outlined">
             <CardContent>
                 <Typography variant="h5" component="h2">
-                    {/* {business.company} */}
-                    {props.business.company}
+                    {props.pokemon.name}
                 </Typography>
 
-                <Typography
-                    className={classes.title}
-                    color="textSecondary"
-                    gutterBottom
-                >
-                    {props.business.firstName} {props.business.lastName}
-                </Typography>
-
-                <Typography variant="body2" component="p">
-                    Company Description:
-                    <br></br>
-                    {props.business.companyDescription}
-                </Typography>
-
-                <Typography className={classes.pos} color="textSecondary">
-                    Varified or Not Varified
-                </Typography>
             </CardContent>
             <div className={"learn"}>
                 <CardActions>
