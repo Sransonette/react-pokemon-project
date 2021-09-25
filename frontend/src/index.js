@@ -14,7 +14,6 @@ const store = createStore(manageStore, compose(applyMiddleware(thunk), window.__
 ReactDOM.render(
   <Provider store={store}>
     <Router>
-
       <App />
     </Router>
   </Provider>,
