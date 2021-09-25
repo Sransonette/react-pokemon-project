@@ -6,6 +6,7 @@ import NavBar from './components/NavBar.js'
 import Header from './components/Header.js'
 import Footer from './components/Footer.js'
 import SearchBar from './components/SearchBar.js';
+import fetchSprites from './actions/fetchSprites';
 // import Background from './components/Background';
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
         <Header />
         <NavBar />
         <SearchBar />
+        <fetchSprites />
         <PokemonContainer />
         <Footer />
       </div>

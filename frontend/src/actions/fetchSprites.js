@@ -1,16 +1,25 @@
-// export function fetchPokedex(page) {
+import React, { Component } from 'react';
+import axios from "axios";
 
-//     const perpage = 150;
+class fetchSprites extends Component {
+
+    const = pokemon = (
+        await axios
+            .get('https://pokeapi.co/api/v2/pokemon')
+    ).data;
 
 
-//     return (dispatch) => {
-//         fetch(`https://pokeapi.co/api/v2/pokemon?limit=${perpage}&offset=${0}`)
-//             .then(resp => resp.json())
-//             .then(pokemon => dispatch({
-//                 type: 'FETCH_SPRITE',
-//                 payload: pokemon
 
-//             }))
-//     }
 
-// }
+    render(pokemon) {
+
+        return (
+
+            <div>
+                {console.log(pokemon)}
+            </div>
+        );
+    }
+}
+
+export default fetchSprites;
